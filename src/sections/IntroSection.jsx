@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import portraitImg from "/src/assets/images/TavanThiry.png"
+import portraitImg from "/src/assets/images/TavanThiry.webp"
 
  const IntroSection = () => {
   return (
