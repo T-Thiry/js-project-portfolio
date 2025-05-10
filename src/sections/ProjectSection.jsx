@@ -1,9 +1,9 @@
 import ProjectCard from "../components/ProjectCard"
 import styled from "styled-components"
-import WeatherAppImg from "../assets/images/Weather_App.png";
-import CreativeCollabsImg from "../assets/images/Creative_Collabs_Website.png";
-import AccessibilityQuizImg from "../assets/images/Web_Accessibility_Quiz.png";
-import SustainabilityHousingImg from "../assets/images/Sustainability_Housing.png";
+import WeatherAppImg from "../assets/images/Weather_App.webp";
+import CreativeCollabsImg from "../assets/images/Creative_Collabs_Website.webp";
+import AccessibilityQuizImg from "../assets/images/Web_Accessibility_Quiz.webp";
+import SustainabilityHousingImg from "../assets/images/Sustainability_Housing.webp";
 
 const projects = [
     {
