@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import HtmlLogo from '../assets/images/HTML_Logo.svg';
 import CssLogo from '../assets/images/CSS_Logo.svg';
+import JavascriptLogo from '../assets/images/Javascript_Logo.svg';
+import TypescriptLogo from '../assets/images/Typescript_Logo.svg';
 import ReactLogo from '../assets/images/React_Logo.svg';
+import GithubLogo from '../assets/images/Github_Logo.svg';
 import FigmaLogo from '../assets/images/Figma_Logo.svg';
 import NotionLogo from '../assets/images/Notion_Logo.svg';
 import AsanaLogo from '../assets/images/Asana_Logo.svg';
@@ -15,7 +18,10 @@ const TechSection = () => {
       <IconGrid>
         <IconWrapper><img src={HtmlLogo} alt="HTML logo"/></IconWrapper>
         <IconWrapper><img src={CssLogo} alt="CSS logo"/></IconWrapper>
+        <IconWrapper><img src={JavascriptLogo} alt="Javascript logo"/></IconWrapper>
+        <IconWrapper><img src={TypescriptLogo} alt="Typescript logo"/></IconWrapper>
         <IconWrapper><img src={ReactLogo} alt="React logo"/></IconWrapper>
+        <IconWrapper><img src={GithubLogo} alt="Github logo"/></IconWrapper>
         <IconWrapper><img src={FigmaLogo} alt="Figma logo"/></IconWrapper>
         <IconWrapper><img src={NotionLogo} alt="Notion logo"/></IconWrapper>
         <IconWrapper><img src={AsanaLogo} alt="Asana logo"/></IconWrapper>
