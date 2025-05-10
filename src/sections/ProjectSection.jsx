@@ -1,9 +1,13 @@
 import ProjectCard from "../components/ProjectCard"
 import styled from "styled-components"
+import WeatherAppImg from "../assets/images/Weather_App.png";
+import CreativeCollabsImg from "../assets/images/Creative_Collabs_Website.png";
+import AccessibilityQuizImg from "../assets/images/Web_Accessibility_Quiz.png";
+import SustainabilityHousingImg from "../assets/images/Sustainability_Housing.png";
 
 const projects = [
     {
-        img: "./src/assets/images/Weather_App.png",
+        img: WeatherAppImg,
         title: "Weather App",
         text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts.",
         buttonOneText: "View Demo",
@@ -11,7 +15,7 @@ const projects = [
         tags: ["Javascript","Typescript", "CSS", "HTML", "OpenWeather API"],
     },
     {
-        img: "./src/assets/images/Creative_Collabs_Website.png",
+        img: CreativeCollabsImg,
         title: "Creative Collabs Website",
         text: "A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events.",
         buttonOneText: "View Demo",
@@ -19,7 +23,7 @@ const projects = [
         tags: ["CSS", "HTML"],
     },
     {
-        img: "./src/assets/images/Web_Accessibility_Quiz.png",
+        img: AccessibilityQuizImg,
         title: "Web Accessibility Quiz",
         text: "A quiz to help users test their knowledge of inclusive design principles in a quick and engaging way.",
         buttonOneText: "View Demo",
@@ -27,7 +31,7 @@ const projects = [
         tags: ["Javascript","Typescript", "CSS", "HTML", "Accessibility"],
     },
     {
-        img: "./src/assets/images/Sustainability_Housing.png",
+        img: SustainabilityHousingImg,
         title: "Sustainable Housing Simulation",
         text: "Interactive simulation exploring eco-friendly housing through scenarios focused on energy efficiency and smart design.",
         buttonOneText: "View Demo",
