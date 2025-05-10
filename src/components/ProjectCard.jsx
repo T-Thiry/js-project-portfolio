@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import webIcon from "/src/assets/Images/Web_Icon.svg";
-import githubIcon from "/src/assets/Images/Github_Icon.svg";
+import webIcon from "/src/assets/images/Web_Icon.svg";
+import githubIcon from "/src/assets/images/Github_Icon.svg";
 
 
 const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, reverse }) => (
