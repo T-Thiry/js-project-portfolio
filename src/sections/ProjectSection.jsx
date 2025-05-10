@@ -1,43 +1,63 @@
+import ProjectCard from "../components/ProjectCard"
 import styled from "styled-components"
 
+const projects = [
+    {
+        img: "./src/assets/images/Weather_App.png",
+        title: "Weather App",
+        text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+    },
+    {
+        img: "./src/assets/images/Creative_Collabs_Website.png",
+        title: "Creative Collabs Website",
+        text: "A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+    },
+    {
+        img: "./src/assets/images/Web_Accessibility_Quiz.png",
+        title: "Web Accessibility Quiz",
+        text: "A quiz to help users test their knowledge of inclusive design principles in a quick and engaging way.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+    },
+    {
+        img: "./src/assets/images/Sustainability_Housing.png",
+        title: "Sustainable Housing Simulation",
+        text: "Interactive simulation exploring eco-friendly housing through scenarios focused on energy efficiency and smart design.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+        },
+    ];
+
 const ProjectSection = () => {
-  return (
-    <Section>
-      <Title>My Projects</Title>
+return (
+  <Section>
+    <SectionTitle>My Projects</SectionTitle>
+    {projects.map((project, index) => (
+      <ProjectCard key={index} {...project} />
+    ))}
+  </Section>
+);
+};
 
-      <ProjectCard
-        img="https://via.placeholder.com/400x200"
-        title="Weather App"
-        text="An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts."
-        buttonOneText="View Demo"
-        buttonTwoText="View Code"
-      />
+const SectionTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: center;
+  margin: 30px 0;
 
-      <ProjectCard
-        img="https://via.placeholder.com/400x200"
-        title="Creative Collabs Website"
-        text="A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events."
-        buttonOneText="View Demo"
-        buttonTwoText="View Code"
-      />
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+`;
 
-      <ProjectCard
-        img="https://via.placeholder.com/400x200"
-        title="Web Accessibility Quiz"
-        text="A quiz to help users test their knowledge of inclusive design principles in a quick and engaging way."
-        buttonOneText="View Demo"
-        buttonTwoText="View Code"
-      />
-
-      <ProjectCard
-        img="https://via.placeholder.com/400x200"
-        title="Sustainable Housing Simulation"
-        text="Interactive simulation exploring eco-friendly housing through scenarios focused on energy efficiency and smart design."
-        buttonOneText="View Demo"
-        buttonTwoText="View Code"
-      />
-    </Section>
-  )
-}
+const Section = styled.section`
+  background-color: #ffffff;
+`;
 
 export default ProjectSection
