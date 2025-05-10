@@ -8,6 +8,7 @@ const projects = [
         text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
+        tags: ["Javascript","Typescript", "CSS", "HTML", "OpenWeather API"],
     },
     {
         img: "./src/assets/images/Creative_Collabs_Website.png",
@@ -15,6 +16,7 @@ const projects = [
         text: "A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
+        tags: ["CSS", "HTML"],
     },
     {
         img: "./src/assets/images/Web_Accessibility_Quiz.png",
@@ -22,6 +24,7 @@ const projects = [
         text: "A quiz to help users test their knowledge of inclusive design principles in a quick and engaging way.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
+        tags: ["Javascript","Typescript", "CSS", "HTML", "Accessibility"],
     },
     {
         img: "./src/assets/images/Sustainability_Housing.png",
@@ -29,6 +32,7 @@ const projects = [
         text: "Interactive simulation exploring eco-friendly housing through scenarios focused on energy efficiency and smart design.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
+        tags: ["UX design", "UX research", "UI design", "Accessibility"],
         },
     ];
 

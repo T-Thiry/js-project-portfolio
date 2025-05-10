@@ -71,6 +71,7 @@ const IconGrid = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.7rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 
   @media (min-width: 768px) {
