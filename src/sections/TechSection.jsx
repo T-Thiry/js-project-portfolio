@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import htmlLogo from '../assets/images/HTML_Logo.svg';
-import cssLogo from '../assets/images/CSS_Logo.svg';
-import javascriptLogo from '../assets/images/JavaScript_Logo.svg';
-import typescriptLogo from '../assets/images/TypeScript_Logo.svg';
-import reactLogo from '../assets/images/React_Logo.svg';
-import githubLogo from '../assets/images/Github_Logo.svg';
-import figmaLogo from '../assets/images/Figma_Logo.svg';
-import notionLogo from '../assets/images/Notion_Logo.svg';
-import asanaLogo from '../assets/images/Asana_Logo.svg';
-import slackLogo from '../assets/images/Slack_Logo.svg';
+import HtmlLogo from '../assets/images/HTML_Logo.svg';
+import CssLogo from '../assets/images/CSS_Logo.svg';
+import JavascriptLogo from '../assets/images/Javascript_Logo.svg';
+import TypescriptLogo from '../assets/images/Typescript_Logo.svg';
+import ReactLogo from '../assets/images/React_Logo.svg';
+import GithubLogo from '../assets/images/Github_Logo.svg';
+import FigmaLogo from '../assets/images/Figma_Logo.svg';
+import NotionLogo from '../assets/images/Notion_Logo.svg';
+import AsanaLogo from '../assets/images/Asana_Logo.svg';
+import SlackLogo from '../assets/images/Slack_Logo.svg';
 
 const TechSection = () => {
   return (
@@ -16,16 +16,16 @@ const TechSection = () => {
       <ContentWrapper>
       <Heading>Tech</Heading>
       <IconGrid>
-        <IconWrapper><img src={htmlLogo} alt="HTML logo"/></IconWrapper>
-        <IconWrapper><img src={cssLogo} alt="CSS logo"/></IconWrapper>
-        <IconWrapper><img src={javascriptLogo} alt="Javascript logo"/></IconWrapper>
-        <IconWrapper><img src={typescriptLogo} alt="TypeScript logo"/></IconWrapper>
-        <IconWrapper><img src={reactLogo} alt="React logo"/></IconWrapper>
-        <IconWrapper><img src={githubLogo} alt="Github logo"/></IconWrapper>
-        <IconWrapper><img src={figmaLogo} alt="Figma logo"/></IconWrapper>
-        <IconWrapper><img src={notionLogo} alt="Notion logo"/></IconWrapper>
-        <IconWrapper><img src={asanaLogo} alt="Asana logo"/></IconWrapper>
-        <IconWrapper><img src={slackLogo} alt="Slack logo"/></IconWrapper>
+        <IconWrapper><img src={HtmlLogo} alt="HTML logo"/></IconWrapper>
+        <IconWrapper><img src={CssLogo} alt="CSS logo"/></IconWrapper>
+        <IconWrapper><img src={JavascriptLogo} alt="Javascript logo"/></IconWrapper>
+        <IconWrapper><img src={TypescriptLogo} alt="TypeScript logo"/></IconWrapper>
+        <IconWrapper><img src={ReactLogo} alt="React logo"/></IconWrapper>
+        <IconWrapper><img src={GithubLogo} alt="Github logo"/></IconWrapper>
+        <IconWrapper><img src={FigmaLogo} alt="Figma logo"/></IconWrapper>
+        <IconWrapper><img src={NotionLogo} alt="Notion logo"/></IconWrapper>
+        <IconWrapper><img src={AsanaLogo} alt="Asana logo"/></IconWrapper>
+        <IconWrapper><img src={SlackLogo} alt="Slack logo"/></IconWrapper>
       </IconGrid>
       <Paragraph>
        HTML, CSS, JavaScript, ES6, JSX, TypeScript, React, React Hooks, Node.js,  Mongo DB, APIs, Git, GitHub, Web Accessibility (WCAG).
