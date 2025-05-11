@@ -20,7 +20,7 @@ const projects = [
         text: "A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
-        tags: ["CSS", "HTML"],
+        tags: ["CSS", "HTML", "Responsive Design", ],
     },
     {
         img: AccessibilityQuizImg,
