@@ -1,40 +1,17 @@
 import styled from "styled-components"
-import webIcon from "/src/assets/images/Web_Icon.svg";
-import githubIcon from "/src/assets/images/Github_Icon.svg";
 
-
-const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, reverse }) => (
-    <Card $reverse={reverse}>
+const ArticleCard = ({ img, title, text, button }) => (
+    <Card>
     <Image src={img} alt={title} width="600" height="400"/>
     <Content>
-    {tags && (
-        <Tags>
-          {tags.map((tag, index) => (
-            <Tag key={index}>{tag}</Tag>
-          ))}
-        </Tags>
-      )}
     <Title>{title}</Title>
     <Text>{text}</Text>
-    <ButtonGroup>
-      <Button>
-      <IconImg src={webIcon} alt="Live demo icon" />
-        {buttonOneText}</Button>
-      <Button>
-      <IconImg src={githubIcon} alt="View code icon" />
-      {buttonTwoText}</Button>
-    </ButtonGroup>
+      <Button>{button}</Button>
     </Content>
     </Card>
   )
 
-const IconImg = styled.img`
-  width: 22px;
-  height: 22px;
-  margin: 0 0.5rem;
-`;
-
-const Card = styled.div`
+  const Card = styled.div`
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
@@ -51,7 +28,7 @@ const Card = styled.div`
   }
 
   @media (min-width: 1024px) {
-    flex-direction: ${({ $reverse }) => ($reverse ? "row-reverse" : "row")};
+    flex-direction: row;
     gap: 2rem;
   }
   `;
@@ -71,13 +48,15 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: auto;
   max-width: 600px;
+  height: 300px;
   border-radius: 12px;
   object-fit: cover;
 
+
   @media (min-width: 1024px) {
     width: 50%;
+    height: 400px;
   }
 `;
 
@@ -108,12 +87,6 @@ const Text = styled.p`
   }
 `;
 
-const ButtonGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-`;
-
 const Button = styled.button`
   display: inline-flex;
   align-items: center;
@@ -138,20 +111,4 @@ const Button = styled.button`
   }
 `;
 
-const Tags = styled.div`
-  display: flex;
-  gap: 0.3rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-`;
-
-const Tag = styled.span`
-  background-color: #ffffff;
-  color: #1e1e1e;
-  padding: 0.1rem 0.6rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #1e1e1e;
-`;
-
-  export default ProjectCard
+  export default ArticleCard

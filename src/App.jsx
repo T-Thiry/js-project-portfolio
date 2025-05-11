@@ -4,6 +4,7 @@ import IntroSection from "./sections/IntroSection"
 import TechSection from "./sections/TechSection"
 import ProjectSection from "./sections/ProjectSection"
 import SkillsSection from "./sections/SkillsSection"
+import ArticleSection from "./sections/ArticleSection"
 
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
     <TechSection />
     <ProjectSection />
     <SkillsSection />
+    <ArticleSection />
     </>
   )
 }
