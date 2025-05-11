@@ -5,7 +5,7 @@ import githubIcon from "/src/assets/images/Github_Icon.svg";
 
 const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, reverse }) => (
     <Card $reverse={reverse}>
-    <Image src={img} alt={title}/>
+    <Image src={img} alt={title} width="600" height="400"/>
     <Content>
     {tags && (
         <Tags>
@@ -71,6 +71,7 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  height: auto;
   max-width: 600px;
   border-radius: 12px;
   object-fit: cover;
