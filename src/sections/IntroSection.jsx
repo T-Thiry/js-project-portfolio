@@ -103,11 +103,13 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1rem;
+  min-height: 350px;
 `
 
 const Image = styled.img`
   width: 100%;
   height: auto;
+  min-height: 350px;
   max-width: 325px;
   border-radius: 3rem;
   object-fit: cover;
