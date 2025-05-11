@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const ArticleCard = ({ img, title, text, button }) => (
     <Card>
-    <Image src={img} alt={title} width="600" height="400"/>
+    <Image src={img} alt={title} width="600" height="300"/>
     <Content>
     <Title>{title}</Title>
     <Text>{text}</Text>
