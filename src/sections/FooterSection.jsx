@@ -4,7 +4,7 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
 
 const FooterSection = ({ title }) => (
   <Section>
-  <Image src={portraitImg} alt={title}/>
+  <Image src={portraitImg} alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"/>
   <Content>
   <Title>Tavan Thiry</Title>
   <Contact>
