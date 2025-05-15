@@ -19,6 +19,8 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
         <Image
           src={portraitImg}
           alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"
+          width={325}
+          height={350}
         />
       </ImageContainer>
     </Section>
