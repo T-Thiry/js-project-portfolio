@@ -5,7 +5,7 @@ import githubIcon from "/src/assets/images/Github_Icon.svg";
 
 const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, reverse }) => (
     <Card $reverse={reverse}>
-    <Image src={img} alt={title} width="600" height="400"/>
+    <Image src={img} alt={title} width="600" height="400" loading="lazy"/>
     <Content>
     {tags && (
         <Tags>
