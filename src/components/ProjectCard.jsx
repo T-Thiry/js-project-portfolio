@@ -62,11 +62,6 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 600px;
-  padding: 0 1rem;
-
-   @media (min-width: 768px) {
-    padding: 1rem;
-  }
 `;
 
 const Image = styled.img`
@@ -77,7 +72,7 @@ const Image = styled.img`
   object-fit: cover;
 
   @media (min-width: 1024px) {
-    width: 50%;
+    width: 45%;
   }
 `;
 

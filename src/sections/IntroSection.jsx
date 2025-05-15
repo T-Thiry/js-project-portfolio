@@ -46,10 +46,14 @@ const IntroContent = styled.div`
   text-align: center;
   padding: 1rem;
 
-  @media (min-width: 768px {
+  @media (min-width: 768px) {
     align-items: flex-start;
     text-align: left;
     padding: 2rem;
+  }
+  
+  @media (min-width: 1024px) {
+    text-align: left;
   }
 `
 

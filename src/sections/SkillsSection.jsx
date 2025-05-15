@@ -93,18 +93,14 @@ const SkillsWrapper = styled.div`
 
 const CategoryWrapper = styled.div`
   background-color: #1e1e1e;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px;
   width: 100%;
+  max-width: 260px;
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    padding: 1.5rem;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 1rem;
-    width: 20%;
+    max-width: 200px;
   }
 `
 
@@ -112,15 +108,11 @@ const CategoryTitle = styled.div`
   font-weight: 400;
   font-size: 1rem;
   color: #ffffff;
-  padding: 0.2rem 3rem;
+  padding: 0.2rem 1rem;
   margin-bottom: 1rem;
   text-align: center;
   border: 1px solid #ffffff;
   border-radius: 8px;
-
-  @media (min-width: 768px) {
-    padding: 0.2rem 1rem;
-  }
 `
 
 const SkillsList = styled.div`

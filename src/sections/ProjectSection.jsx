@@ -9,15 +9,15 @@ const projects = [
     {
         img: WeatherAppImg,
         title: "Weather App",
-        text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts.",
+        text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts. The app features a clean, responsive UI with dynamic icons and background changes based on weather conditions.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
-        tags: ["Javascript","Typescript", "CSS", "HTML", "OpenWeather API"],
+        tags: ["Javascript","Typescript", "CSS", "HTML", "API"],
     },
     {
         img: CreativeCollabsImg,
         title: "Creative Collabs Website",
-        text: "A platform that showcases designer workshops and developer hackathons for creatives and coders to discover and join events.",
+        text: "A website that showcases upcoming designer workshops and developer hackathons, making it easy for creatives and coders to discover and join events. The platform features a clean layout, and responsive design for seamless browsing.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["CSS", "HTML", "Responsive Design", ],
@@ -25,7 +25,7 @@ const projects = [
     {
         img: AccessibilityQuizImg,
         title: "Web Accessibility Quiz",
-        text: "A quiz to help users test their knowledge of inclusive design principles in a quick and engaging way.",
+        text: "The web accessibility quiz helps users test their knowledge of inclusive design principles in a quick and engaging way. It is designed to raise awareness of common accessibility issues while encouraging best practices in web development.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["Javascript","Typescript", "CSS", "HTML", "Accessibility"],
@@ -33,7 +33,7 @@ const projects = [
     {
         img: SustainabilityHousingImg,
         title: "Sustainable Housing Simulation",
-        text: "Interactive simulation exploring eco-friendly housing through scenarios focused on energy efficiency and smart design.",
+        text: "A simulation that explores the principles of sustainable housing through interactive scenarios that highlight energy efficiency, eco-friendly materials, and smart design choices.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["UX design", "UX research", "UI design", "Accessibility"],
@@ -56,11 +56,9 @@ const SectionTitle = styled.h2`
   font-weight: bold;
   color: #1e1e1e;
   text-align: center;
-  margin: 30px 0;
 
   @media (min-width: 768px) {
     font-size: 2rem;
-    margin-top: 100px;
   }
 `;
 
