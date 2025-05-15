@@ -25,8 +25,6 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
           <Image
             src={portraitImg}
             alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"
-            width={325}
-            height={350}
           />
         </ImageContainer>
       </Section>
@@ -119,7 +117,10 @@ const ImageContainer = styled.div`
   min-height: 350px;
 `
 
-const Image = styled.img`
+const Image = styled.img.attrs({
+  width: 325,
+  height: 350,
+})`
   width: 100%;
   height: auto;
   min-height: 350px;
