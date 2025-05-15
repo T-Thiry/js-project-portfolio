@@ -1,29 +1,36 @@
 import styled from "styled-components"
+import { Helmet } from "react-helmet";
 import portraitImg from "/src/assets/images/TavanThiry.webp"
 
  const IntroSection = () => {
   return (
-    <Section id="home">
-      <IntroContent>
-        <Paragraph>Hi there, I am</Paragraph>
-        <MediumHeading>Tavan Thiry</MediumHeading>
-        <LargeHeadingGroup>
-          <LargeHeading>Frontend Developer</LargeHeading>
-          <LargeHeading>UX/UI Designer</LargeHeading>
-        </LargeHeadingGroup>
-        <Paragraph>
-          A Frontend Developer with a background in UX/UI design. I make sure design and functionality go hand in hand. My strength lies in bridging the gap between code and design, helping to create smoother processes and better products.
-        </Paragraph>
-        </IntroContent>
-      <ImageContainer>
-        <Image
-          src={portraitImg}
-          alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"
-          width={325}
-          height={350}
-        />
-      </ImageContainer>
-    </Section>
+    <>
+      <Helmet>
+          <link rel="preload" as="image" href={portraitImg} />
+        </Helmet>
+
+      <Section id="home">
+        <IntroContent>
+          <Paragraph>Hi there, I am</Paragraph>
+          <MediumHeading>Tavan Thiry</MediumHeading>
+          <LargeHeadingGroup>
+            <LargeHeading>Frontend Developer</LargeHeading>
+            <LargeHeading>UX/UI Designer</LargeHeading>
+          </LargeHeadingGroup>
+          <Paragraph>
+            A Frontend Developer with a background in UX/UI design. I make sure design and functionality go hand in hand. My strength lies in bridging the gap between code and design, helping to create smoother processes and better products.
+          </Paragraph>
+          </IntroContent>
+        <ImageContainer>
+          <Image
+            src={portraitImg}
+            alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"
+            width={325}
+            height={350}
+          />
+        </ImageContainer>
+      </Section>
+    </>
   )
 }
 
