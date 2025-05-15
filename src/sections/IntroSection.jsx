@@ -120,7 +120,6 @@ const ImageContainer = styled.div`
 const Image = styled.img.attrs({
   width: 325,
   height: 350,
-  loading: "eager",
 })`
   width: 100%;
   height: auto;
