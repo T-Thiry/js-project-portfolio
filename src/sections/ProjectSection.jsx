@@ -67,7 +67,7 @@ const SectionTitle = styled.h2`
 `;
 
 const Section = styled.section`
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colors.secondary};
 `;
 
 export default ProjectSection

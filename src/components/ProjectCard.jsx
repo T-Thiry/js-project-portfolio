@@ -96,7 +96,7 @@ const Text = styled.p`
   color: ${(props) => props.theme.colors.primary};
   margin: 0 0 2rem 0;
   font-size: ${(props) => props.theme.fontSizes.small};
-  font-weight: 400;
+  font-weight: ${(props) => props.theme.fontWeights.regular};
 
   @media (min-width: ${(props) => props.theme.breakpoints.tablet}){
     font-size: ${(props) => props.theme.fontSizes.large};
