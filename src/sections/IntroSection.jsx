@@ -5,10 +5,9 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
  const IntroSection = () => {
   return (
     <>
-      <Helmet>
-          <link rel="preload" as="image" href={portraitImg} />
-        </Helmet>
-
+    <Helmet>
+      <link rel="preload" as="image" href={portraitImg} />
+    </Helmet>
       <Section id="home">
         <IntroContent>
           <Paragraph>Hi there, I am</Paragraph>
@@ -25,6 +24,9 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
           <Image
             src={portraitImg}
             alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer"
+            width={325}
+            height={350}
+            loading="eager"
           />
         </ImageContainer>
       </Section>
@@ -120,10 +122,7 @@ const ImageContainer = styled.div`
   min-height: 350px;
 `
 
-const Image = styled.img.attrs({
-  width: 325,
-  height: 350,
-})`
+const Image = styled.img`
   width: 100%;
   height: auto;
   min-height: 350px;
