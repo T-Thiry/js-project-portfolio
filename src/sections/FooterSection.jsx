@@ -1,17 +1,30 @@
 import styled from "styled-components"
 import portraitImg from "/src/assets/images/TavanThiry.webp"
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+const SocialLinks = () => (
+  <SocialIcons>
+    <IconLink href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <FaGithub />
+    </IconLink>
+    <IconLink href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <FaLinkedin />
+    </IconLink>
+  </SocialIcons>
+);
 
 const FooterSection = ({ title }) => (
   <Section>
-  <Image src={portraitImg} alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer" width="100px" height="100px"/>
-  <Content>
-  <Title>Tavan Thiry</Title>
-  <Contact>
-      <Text as="a" href="tel:+46707916107"> +46707916107</Text>
-      <Text as="a" href="mailto:tavan.thiry@gmail.com">tavan.thiry@gmail.com</Text>
-  </Contact>
-  </Content>
+    <Title>Let's Talk</Title>
+    <Image src={portraitImg} alt="Portrait of Tavan Thiry, a frontend developer and UX/UI designer" width="100px" height="100px"/>
+    <Content>
+      <ProfileName>Tavan Thiry</ProfileName>
+      <Contact>
+          <Text as="a" href="tel:+46707916107"> +46707916107</Text>
+          <Text as="a" href="mailto:tavan.thiry@gmail.com">tavan.thiry@gmail.com</Text>
+      </Contact>
+      <SocialLinks />
+    </Content>
   </Section>
   )
 
@@ -23,17 +36,27 @@ const FooterSection = ({ title }) => (
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.secondary};
     padding: 2rem 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
       padding: 3rem 1.5rem;
     }
+    `;
 
-    @media (min-width: 1024px) {
-        padding: 4rem 2rem;
-      }
+  const Title = styled.h3`
+    font-size: ${(props) => props.theme.fontSizes.headingMedium.mobile};
+    font-weight: ${(props) => props.theme.fontWeights.medium};
+    margin-bottom: 1rem;
+  
+    @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+      font-size: ${(props) => props.theme.fontSizes.headingMedium.tablet};
+    }
+    
+    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+      font-size: ${(props) => props.theme.fontSizes.headingMedium.desktop};
+    }
     `;
 
   const Image = styled.img`
@@ -43,9 +66,14 @@ const FooterSection = ({ title }) => (
     object-fit: cover;
     margin-bottom: 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
       width: 140px;
       height: 140px;
+    }
+
+    @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+      width: 160px;
+      height: 160px;
     }
   `;
 
@@ -57,26 +85,26 @@ const Content = styled.div`
   text-align: center;
   padding: 0 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 0 2rem;
   }
   `;
 
-const Title = styled.h4`
-  font-size: 1rem;
-  font-weight: 400;
+const ProfileName = styled.p`
+  font-size: ${(props) => props.theme.fontSizes.small};
+  font-weight: ${(props) => props.theme.fontWeights.regular};
 
-  @media (min-width: 768px) {
-    font-size: 1.125rem;
+  @media (min-width:  ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 
 const Text = styled.span`
   display: block;
   margin: 0.4rem 0;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #ffffff;
+  font-size: ${(props) => props.theme.fontSizes.small};
+  font-weight: ${(props) => props.theme.fontWeights.regular};
+  color: ${(props) => props.theme.colors.secondary};
   text-decoration: none;
 
   &:hover {
@@ -86,8 +114,30 @@ const Text = styled.span`
 `;
 
 const Contact = styled.div`
-  margin-top: 0.6rem;
   text-align: center;
+`;
+
+const SocialIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  color: ${(props) => props.theme.colors.secondary};
+`;
+
+const IconLink = styled.a`
+  color: ${(props) => props.theme.colors.secondary};
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.accent};
+    cursor: pointer;
+  }
+  
+  @media (min-width:  ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: 1.75rem;
+  }
 `;
 
 export default FooterSection
