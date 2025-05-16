@@ -85,7 +85,7 @@ const IconGrid = styled.div`
 
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     flex-wrap: nowrap;
-    gap: 1.5rem;
+    gap: 1.4rem;
   }
 `;
 
