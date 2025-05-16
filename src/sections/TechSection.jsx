@@ -124,7 +124,7 @@ const IconWrapper = styled.div`
 const Paragraph = styled.p`
   font-size: ${(props) => props.theme.fontSizes.small};
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   line-height: ${(props) => props.theme.lineHeights.body};
 

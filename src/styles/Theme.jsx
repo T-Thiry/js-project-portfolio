@@ -3,7 +3,7 @@ const theme = {
     primary: "#1e1e1e",     // black color
     secondary: "#ffffff",   // white color
     tertiary: "#F5F5F5",    // light gray
-    accent: "#CE701B",      // orange
+    accent: "#CE400C",      // orange
   },
 
   fontSizes: {
