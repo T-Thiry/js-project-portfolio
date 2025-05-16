@@ -1,3 +1,5 @@
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/Theme";
 import GlobalStyles from "./styles/GlobalStyles"
 import Header from "./components/Header"
 import IntroSection from "./sections/IntroSection"
@@ -11,6 +13,7 @@ import FooterSection from "./sections/FooterSection"
 export const App = () => {
   return (
     <>
+    <ThemeProvider theme={theme}>
     <GlobalStyles />
     <Header />
     <IntroSection />
@@ -19,6 +22,7 @@ export const App = () => {
     <SkillsSection />
     <ArticleSection />
     <FooterSection />
+    </ThemeProvider>
     </>
   )
 }

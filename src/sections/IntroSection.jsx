@@ -35,13 +35,15 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
 const Section = styled.section`
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width:${(props) => props.theme.breakpoints.tablet}) {
     flex-direction: row;
     align-items: center;
+    margin-top: 0rem;
   }
   `
 
@@ -53,39 +55,40 @@ const IntroContent = styled.div`
   text-align: center;
   padding: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     align-items: flex-start;
     text-align: left;
     padding: 2rem;
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     text-align: left;
   }
 `
 
 const Paragraph = styled.p`
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: ${(props) => props.theme.fontSizes.small};
+  font-weight: ${(props) => props.theme.fontWeights.regular};
+  line-height: ${(props) => props.theme.lineHeights.body};
   max-width: 600px;
+ 
 
-  @media (min-width: 768px) {
-    font-size: 1.125rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size:${(props) => props.theme.fontSizes.large};
   }
 `
 
 const MediumHeading = styled.h4`
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #1e1e1e;
+  font-size: ${(props) => props.theme.fontSizes.headingSmall.mobile};
+  font-weight: ${(props) => props.theme.fontWeights.semiBold};
+  color: ${(props) => props.theme.colors.accent};
 
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.fontSizes.headingSmall.tablet};
+  
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: ${(props) => props.theme.fontSizes.headingSmall.desktop};
   }
-
-  @media (min-width: 1024px) {
-    font-size: 1.75rem;
   }
 `
 const LargeHeadingGroup = styled.div`
@@ -95,17 +98,17 @@ const LargeHeadingGroup = styled.div`
   `
 
 const LargeHeading = styled.h1`
-  font-size: 1.75rem;
-  font-weight: 600;
-  line-height: 1.3;
+  font-size: ${(props) => props.theme.fontSizes.headingLarge.mobile};
+  font-weight: ${(props) => props.theme.fontWeights.Bold};
+  line-height: ${(props) => props.theme.lineHeights.heading};
   white-space: nowrap;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: ${(props) => props.theme.fontSizes.headingXLarge.tablet};
   }
 
   @media (min-width: 1024px) {
-    font-size: 2.25rem;
+    font-size: ${(props) => props.theme.fontSizes.headingXLarge.desktop};
   }
 `
 

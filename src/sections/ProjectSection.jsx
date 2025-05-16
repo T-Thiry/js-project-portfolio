@@ -52,13 +52,17 @@ return (
 };
 
 const SectionTitle = styled.h2`
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1e1e1e;
+  font-size: ${(props) => props.theme.fontSizes.headingLarge.mobile};
+  font-weight: ${(props) => props.theme.fontWeights.Bold};
+  color: ${(props) => props.theme.colors.primary};
   text-align: center;
 
-  @media (min-width: 768px) {
-    font-size: 2rem;
+  @media (min-width:  ${(props) => props.theme.breakpoints.tablet}) {
+    font-size:  ${(props) => props.theme.fontSizes.headingLarge.tablet};
+  }
+
+  @media (min-width:  ${(props) => props.theme.breakpoints.desktop}) {
+    font-size:  ${(props) => props.theme.fontSizes.headingLarge.desktop};
   }
 `;
 

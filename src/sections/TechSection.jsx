@@ -28,7 +28,7 @@ const TechSection = () => {
         <IconWrapper><img src={SlackLogo} alt="Slack logo"/></IconWrapper>
       </IconGrid>
       <Paragraph>
-       HTML, CSS, JavaScript, ES6, JSX, TypeScript, React, React Hooks, Node.js,  Mongo DB, APIs, Git, GitHub, Web Accessibility (WCAG).
+       HTML, CSS, JavaScript, ES6, JSX, TypeScript, React, React Hooks, Node.js,  Mongo DB, APIs, Git, GitHub, Mob Programming, Pair Programming, Web Accessibility (WCAG).
       </Paragraph>
       </ContentWrapper>
     </Section>
@@ -38,15 +38,15 @@ const TechSection = () => {
 const Section = styled.section`
   width: 100%;
   padding: 4rem 1rem;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color:${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.secondary};
   margin: 2rem 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 5rem 2rem;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     padding: 6rem 2rem;
   }
 `;
@@ -57,12 +57,16 @@ const ContentWrapper = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: 2rem;
+  font-size: ${(props) => props.theme.fontSizes.headingLarge.mobile};
   text-align: center;
   margin-bottom: 1.5rem;
 
-  @media (min-width: 768px) {
-    font-size: 2.5rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.fontSizes.headingLarge.tablet};
+  }
+
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: ${(props) => props.theme.fontSizes.headingLarge.desktop};
   }
 `;
 
@@ -74,12 +78,12 @@ const IconGrid = styled.div`
   padding: 1rem;
   margin-bottom: 2rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     flex-wrap: nowrap;
     gap: 1rem;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     flex-wrap: nowrap;
     gap: 1.5rem;
   }
@@ -95,7 +99,7 @@ const IconWrapper = styled.div`
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     width: 46px;
     height: 46px;
 
@@ -105,7 +109,7 @@ const IconWrapper = styled.div`
   }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     width: 52px;
     height: 52px;
   }
@@ -118,14 +122,14 @@ const IconWrapper = styled.div`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1rem;
+  font-size: ${(props) => props.theme.fontSizes.small};
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: ${(props) => props.theme.lineHeights.body};
 
-  @media (min-width: 768px) {
-    font-size: 1.125rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 

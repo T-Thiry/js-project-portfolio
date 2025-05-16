@@ -45,12 +45,12 @@ const Card = styled.div`
   align-items: center;
   gap: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 1rem;
     margin-top: 40px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     flex-direction: ${({ $reverse }) => ($reverse ? "row-reverse" : "row")};
     gap: 2rem;
   }
@@ -71,35 +71,35 @@ const Image = styled.img`
   border-radius: 12px;
   object-fit: cover;
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     width: 45%;
   }
 `;
 
 const Title = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.3;
-  color: #1e1e1e;
+  font-size: ${(props) => props.theme.fontSizes.headingMedium.mobile};
+  font-weight: ${(props) => props.theme.fontWeights.medium};
+  line-height: ${(props) => props.theme.lineHeights.heading};
+  color: ${(props) => props.theme.colors.primary};
   margin: 0.6rem 0;
 
-  @media (min-width: 768px) {
-    font-size: 1.75rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    font-size: ${(props) => props.theme.fontSizes.headingMedium.tablet};
   }
 
-  @media (min-width: 1024px) {
-    font-size: 2rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: ${(props) => props.theme.fontSizes.headingMedium.desktop};
   }
 `;
 
 const Text = styled.p`
-  color: #1e1e1e;
+  color: ${(props) => props.theme.colors.primary};
   margin: 0 0 2rem 0;
-  font-size: 1rem;
+  font-size: ${(props) => props.theme.fontSizes.small};
   font-weight: 400;
 
-  @media (min-width: 768px){
-    font-size: 1.125rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}){
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 
@@ -113,23 +113,23 @@ const Button = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1rem;
+  line-height: ${(props) => props.theme.lineHeights.body};
   flex: 1;
   padding: 0.5rem 1rem;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.secondary};
+  font-size: ${(props) => props.theme.fontSizes.small};
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 1rem;
 
   &:hover {
-    background-color: #1e1e1e;
+    background-color: ${(props) => props.theme.colors.accent};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     max-width: 50%;
-    font-size: 1.125rem;
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 
@@ -141,12 +141,12 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  background-color: #ffffff;
-  color: #1e1e1e;
+  background-color:${(props) => props.theme.colors.tertiary};
+  color: ${(props) => props.theme.colors.primary};
   padding: 0.1rem 0.6rem;
-  font-size: 1rem;
+  font-size: ${(props) => props.theme.fontSizes.small};
   border-radius: 8px;
-  border: 1px solid #1e1e1e;
+  border: 1px solid ${(props) => props.theme.colors.primary};
 `;
 
   export default ProjectCard

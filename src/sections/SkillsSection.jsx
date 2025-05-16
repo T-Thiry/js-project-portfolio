@@ -46,7 +46,7 @@ const skillsData = [
 
 const SkillsSection = styled.section`
   width: 100%;
-  background-color: #1e1e1e;
+  background-color:${(props) => props.theme.breakpoints.tablet};
   padding: 2rem 0;
   margin: 40px 0;
   display: flex;
