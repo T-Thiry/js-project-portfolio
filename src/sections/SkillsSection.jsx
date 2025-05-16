@@ -46,7 +46,7 @@ const skillsData = [
 
 const SkillsSection = styled.section`
   width: 100%;
-  background-color:${(props) => props.theme.breakpoints.tablet};
+  background-color: ${(props) => props.theme.colors.primary};
   padding: 2rem 0;
   margin: 40px 0;
   display: flex;
@@ -54,30 +54,30 @@ const SkillsSection = styled.section`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     padding: 3rem 0;
     margin: 60px 0;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     padding: 4rem 0;
     margin-top: 100px;
 }
 `
 
 const SkillsTitle = styled.h2`
-  font-size: 1.5rem;
-  color: #ffffff;
+  font-size: ${(props) => props.theme.fontSizes.headingLarge.mobile};
+  color: ${(props) => props.theme.colors.secondary};
   text-align: center;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
-   font-size: 1.75rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+   font-size: ${(props) => props.theme.fontSizes.headingLarge.tablet};
    margin-bottom: 1.5rem;
   }
 
-  @media (min-width: 1024px) {
-    font-size: 2rem;
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    font-size: ${(props) => props.theme.fontSizes.headingLarge.desktop};
     margin-bottom: 1.75rem;
    }
 `
@@ -92,26 +92,26 @@ const SkillsWrapper = styled.div`
 `
 
 const CategoryWrapper = styled.div`
-  background-color: #1e1e1e;
+  background-color:${(props) => props.theme.colors.primary};
   padding: 1rem;
   border-radius: 12px;
   width: 100%;
   max-width: 260px;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     max-width: 200px;
   }
 `
 
 const CategoryTitle = styled.div`
-  font-weight: 400;
-  font-size: 1rem;
-  color: #ffffff;
+  font-weight: ${(props) => props.theme.fontWeights.regular};
+  font-size: ${(props) => props.theme.fontSizes.small};
+  color: ${(props) => props.theme.colors.secondary};
   padding: 0.2rem 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid ${(props) => props.theme.colors.secondary};
   border-radius: 8px;
 `
 
@@ -124,8 +124,8 @@ const SkillsList = styled.div`
 `
 
 const SkillItem = styled.div`
-  font-size: 1rem;
-   color: #ffffff;
+  font-size: ${(props) => props.theme.fontSizes.small};
+   color: ${(props) => props.theme.colors.secondary};
 `
 
 export default SkillsCard
