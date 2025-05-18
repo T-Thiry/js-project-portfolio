@@ -13,6 +13,8 @@ const projects = [
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["Javascript","Typescript", "CSS", "HTML", "API"],
+        liveDemoLink: "https://weatherapp.netlify.app",
+        viewCodeLink: "https://github.com/T-Thiry/newjs-project-weather-app",
     },
     {
         img: CreativeCollabsImg,
@@ -21,6 +23,8 @@ const projects = [
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["CSS", "HTML", "Responsive Design", ],
+        liveDemoLink: "https://hookitup.netlify.app",
+        viewCodeLink: "https://github.com/T-Thiry/js-project-business-site",
     },
     {
         img: AccessibilityQuizImg,
@@ -29,13 +33,15 @@ const projects = [
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["Javascript","Typescript", "CSS", "HTML", "Accessibility"],
+        liveDemoLink: "https://accessibility-guiz.netlify.app",
+        viewCodeLink: "https://github.com/T-Thiry/js-project-accessibility",
     },
     {
         img: SustainabilityHousingImg,
         title: "Sustainable Housing Simulation",
         text: "A simulation that explores the principles of sustainable housing through interactive scenarios that highlight energy efficiency, eco-friendly materials, and smart design choices.",
-        buttonOneText: "View Demo",
-        buttonTwoText: "View Code",
+        singleButtonText: "Explore project",
+        singleButtonLink: "https://example.com",
         tags: ["UX design", "UX research", "UI design", "Accessibility"],
         },
     ];

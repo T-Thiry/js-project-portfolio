@@ -1,12 +1,29 @@
 import styled from "styled-components"
 
-const ArticleCard = ({ img, title, text, button }) => (
+const ArticleCard = ({ 
+  img, 
+  title, 
+  text, 
+  button,
+  buttonLink, 
+}) => (
     <Card>
-    <Image src={img} alt={title} width="600" height="300"/>
+    <Image 
+    src={img} 
+    alt={title} 
+    width="600" 
+    height="300"/>
     <Content>
     <Title>{title}</Title>
     <Text>{text}</Text>
-      <Button>{button}</Button>
+      <Button
+      as="a"
+      href={buttonLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      >
+      {button}
+      </Button>
     </Content>
     </Card>
   )
@@ -95,6 +112,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   cursor: pointer;
   font-size: ${(props) => props.theme.fontSizes.small};
+  text-decoration: none;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.accent};

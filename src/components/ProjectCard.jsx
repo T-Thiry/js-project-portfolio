@@ -3,7 +3,19 @@ import webIcon from "/src/assets/images/Web_Icon.svg";
 import githubIcon from "/src/assets/images/Github_Icon.svg";
 
 
-const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, reverse }) => (
+const ProjectCard = ({ 
+  img, 
+  title, 
+  tags, 
+  text, 
+  buttonOneText, 
+  buttonTwoText, 
+  liveDemoLink, 
+  viewCodeLink, 
+  singleButtonText,
+  singleButtonLink,
+  reverse 
+}) => (
     <Card $reverse={reverse}>
     <Image src={img} alt={title} width="600" height="400"/>
     <Content>
@@ -17,12 +29,38 @@ const ProjectCard = ({ img, title, tags, text, buttonOneText, buttonTwoText, rev
     <Title>{title}</Title>
     <Text>{text}</Text>
     <ButtonGroup>
-      <Button>
-      <IconImg src={webIcon} alt="Live demo icon" />
-        {buttonOneText}</Button>
-      <Button>
-      <IconImg src={githubIcon} alt="View code icon" />
-      {buttonTwoText}</Button>
+      {singleButtonText && singleButtonLink ? (
+          <Button
+            as="a"
+            href={singleButtonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {singleButtonText}
+          </Button>
+        ) : (
+          <>
+            {/* Otherwise render the two buttons */}
+            <Button
+              as="a"
+              href={liveDemoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconImg src={webIcon} alt="Live demo icon" />
+              {buttonOneText}
+            </Button>
+            <Button
+              as="a"
+              href={viewCodeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconImg src={githubIcon} alt="View code icon" />
+              {buttonTwoText}
+            </Button>
+          </>
+        )}
     </ButtonGroup>
     </Content>
     </Card>
@@ -122,6 +160,7 @@ const Button = styled.button`
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.accent};

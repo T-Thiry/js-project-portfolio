@@ -4,10 +4,20 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialLinks = () => (
   <SocialIcons>
-    <IconLink href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+    <IconLink 
+    href="https://github.com/T-Thiry" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="GitHub"
+    >
       <FaGithub />
     </IconLink>
-    <IconLink href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <IconLink 
+    href="https://www.linkedin.com/in/tavanthiry" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="LinkedIn"
+    >
       <FaLinkedin />
     </IconLink>
   </SocialIcons>

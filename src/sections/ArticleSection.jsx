@@ -10,18 +10,21 @@ const articles = [
     title: "Turning Pages: Empowering Financial Literacy through storytelling",
     text: "This article explores how storytelling can simplify complex financial concepts, making them more relatable and engaging. By using narratives, users can better understand and apply financial knowledge in their daily lives.",
     button: "Read Article",
+    buttonLink: "https://example.com",
   },
   {
     img: CollaborationImg,
     title: "Building Bridges: Connecting Developers and Designers through collaboration",
     text: "This article examines how effective collaboration between developers and designers can lead to user-friendly web experiences with seamless communication and mutual understanding in creating cohesive digital products.",
     button: "Read Article",
+    buttonLink: "https://example.com",
   },
   {
     img: PromtingImg,
     title: "Prompting Perfection: How AI Is Revolutionizing UX/UI Design",
     text: "This article delves into how crafting the right prompts can help designers generate design concepts, optimize user interfaces, and enhance content creation, ultimately streamlining workflows and delivering more personalized user experiences.",
     button: "Read Article",
+    buttonLink: "https://example.com",
   },
 ];
 
