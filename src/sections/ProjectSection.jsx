@@ -13,7 +13,7 @@ const projects = [
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["Javascript","Typescript", "CSS", "HTML", "API"],
-        liveDemoLink: "https://weatherapp.netlify.app",
+        liveDemoLink: "https://nordic-weatherapp.netlify.app",
         viewCodeLink: "https://github.com/T-Thiry/newjs-project-weather-app",
     },
     {
