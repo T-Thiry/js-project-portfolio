@@ -62,7 +62,7 @@ const projects = [
         img: SustainabilityHousingImg,
         title: "Sustainable Housing Simulation",
         text: "A simulation that explores the principles of sustainable housing through interactive scenarios that highlight energy efficiency, eco-friendly materials, and smart design choices.",
-        singleButtonText: "Explore project",
+        singleButtonText: "Coming Soon",
         singleButtonLink: "https://example.com",
         tags: ["UX design", "UX research", "UI design", "Accessibility"],
         },
