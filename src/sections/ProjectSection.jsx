@@ -1,5 +1,7 @@
 import ProjectCard from "../components/ProjectCard"
 import styled from "styled-components"
+import TaskManagementImg from "../assets/images/TaskManagement.webp";
+import HappyThoughtsImg from "../assets/images/Happy_Thoughts.webp";
 import WeatherAppImg from "../assets/images/Weather_App.webp";
 import CreativeCollabsImg from "../assets/images/Creative_Collabs_Website.webp";
 import AccessibilityQuizImg from "../assets/images/Web_Accessibility_Quiz.webp";
@@ -7,9 +9,29 @@ import SustainabilityHousingImg from "../assets/images/Sustainability_Housing.we
 
 const projects = [
     {
+        img: TaskManagementImg,
+        title: "ToDo Task Management",
+        text: "A to-do application built with React, using Zustand for global state management and Styled Components for modular, maintainable styling. Features include task creation, completion toggling, and real-time task counters.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+        tags: ["JavaScript", "React", "Global State Management", "Zustand", "Styled Components"],
+        liveDemoLink: "https://tthiry-todotaskmanagement.netlify.app",
+        viewCodeLink: "https://github.com/T-Thiry/js-project-todo",
+    },
+    {
+        img: HappyThoughtsImg,
+        title: "Happy Thoughts App",
+        text: "A cheerful social feed built with React and an external API. Users can share short, positive messages and like others’ thoughts. The app features real-time updates and promotes positivity through simple interactions.",
+        buttonOneText: "View Demo",
+        buttonTwoText: "View Code",
+        tags: ["JavaScript", "React", "Reakt Hooks", "API"],
+        liveDemoLink: "https://tthiry-happythoughts.netlify.app",
+        viewCodeLink: "https://github.com/T-Thiry/js-project-happy-thoughts",
+  },
+    {
         img: WeatherAppImg,
         title: "Weather App",
-        text: "An interactive weather app that fetches real-time data from a weather API, allowing users to search any city and view current conditions, temperature, and forecasts. The app features a clean, responsive UI with dynamic icons and background changes based on weather conditions.",
+        text: "A weather app built with JavaScript and TypeScript. It fetches real-time data from a weather API, allowing users to search any nordic city and view current conditions, temperature, and forecasts.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
         tags: ["Javascript","Typescript", "CSS", "HTML", "API"],
