@@ -15,7 +15,7 @@ const skillsData = [
   },
   {
     category: "Methods 🎨",
-    skills: ["Agile Methodology", "Mob Programming", "Pair Programming", "", "Usability Testing", "Prototyping"]
+    skills: ["Agile Methodology", "Mob Programming", "Pair Programming", "Responsive Design", "Usability Testing", "Prototyping"]
   },
   {
     category: "Languages 🇸🇪",
