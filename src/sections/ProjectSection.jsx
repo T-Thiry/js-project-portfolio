@@ -24,7 +24,7 @@ const projects = [
         text: "A cheerful social feed built with React and an external API. Users can share short, positive messages and like others’ thoughts. The app features real-time updates and promotes positivity through simple interactions.",
         buttonOneText: "View Demo",
         buttonTwoText: "View Code",
-        tags: ["JavaScript", "React", "Reakt Hooks", "API"],
+        tags: ["JavaScript", "React", "React Hooks", "API"],
         liveDemoLink: "https://tthiry-happythoughts.netlify.app",
         viewCodeLink: "https://github.com/T-Thiry/js-project-happy-thoughts",
     },

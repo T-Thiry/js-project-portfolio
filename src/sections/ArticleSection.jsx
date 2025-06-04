@@ -10,7 +10,7 @@ const articles = [
     title: "Turning Pages: Empowering Financial Literacy through storytelling",
     text: "This article explores how storytelling can simplify complex financial concepts, making them more relatable and engaging. By using narratives, users can better understand and apply financial knowledge in their daily lives.",
     button: "View LinkedIn Post",
-    buttonLink: "https://example.com",
+    buttonLink: "https://www.linkedin.com/posts/activity-7334172734727331840-uPhY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBPNgBvXPL2eT3K8Non_y5OWN1icdjbzo",
   },
   {
     img: CollaborationImg,
