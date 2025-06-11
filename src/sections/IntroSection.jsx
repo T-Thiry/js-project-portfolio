@@ -100,7 +100,7 @@ const LargeHeadingGroup = styled.div`
   `
 
 const LargeHeading = styled.h1`
-  font-size: ${(props) => props.theme.fontSizes.headingLarge.mobile};
+  font-size: ${(props) => props.theme.fontSizes.headingXLarge.mobile};
   font-weight: ${(props) => props.theme.fontWeights.Bold};
   line-height: ${(props) => props.theme.lineHeights.heading};
   white-space: nowrap;
