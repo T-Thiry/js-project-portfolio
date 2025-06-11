@@ -13,11 +13,11 @@ import portraitImg from "/src/assets/images/TavanThiry.webp"
           <Paragraph>Hi there, I am</Paragraph>
           <MediumHeading>Tavan Thiry</MediumHeading>
           <LargeHeadingGroup>
-            <LargeHeading>Frontend Developer</LargeHeading>
+            <LargeHeading>Web Developer</LargeHeading>
             <LargeHeading>UX/UI Designer</LargeHeading>
           </LargeHeadingGroup>
           <Paragraph>
-            A Frontend Developer with a background in UX/UI design. I make sure design and functionality go hand in hand. My strength lies in bridging the gap between code and design, helping to create smoother processes and better products.
+            A Web Developer with a background in UX/UI design. I make sure design and functionality go hand in hand. My strength lies in bridging the gap between code and design, helping to create smoother processes and better products.
           </Paragraph>
           </IntroContent>
         <ImageContainer>
